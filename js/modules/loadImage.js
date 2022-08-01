@@ -8,7 +8,7 @@ export const loadImage = () => {
         };
         img.onerror = () => {
             reject(new Error('Error!'));
-            img.src = '/img/news/noimage.png';
+            img.src = '../img/news/noimage.png';
         }
         //img.src = src;
         })
