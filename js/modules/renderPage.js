@@ -12,7 +12,7 @@ wrapperGoods.innerHTML = '';
         return Promise.all([
             fetchRequest(`top-headlines?country=${country}`, {
                 headers: {
-                    'X-Api-Key': '98cba3d8ccad45c79fa56f46eabfc1a0'
+                    'X-Api-Key': '65f5a301725d4d06adeebeffc4e0b99b'
                 },
                 callback: (err, data) => {
                   if (err) {
