@@ -74,7 +74,7 @@
 
 .header__select-block:after {
   content: "";
-  background-image: url("./img/header/arr-down.svg");
+  background-image: url("../img/header/arr-down.svg");
   width: 20px;
   height: 20px;
   position: absolute;
