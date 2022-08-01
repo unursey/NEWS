@@ -1,0 +1,36 @@
+.footer {
+    padding: 22px 0;
+}
+
+.footer__container { 
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer__link-block {
+    display: flex;
+    gap: 15px;
+    align-self: center;
+}
+
+.footer__link {
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+.footer__copy-text {
+    align-self: flex-end;
+}
+
+@media (max-width: 640px) {
+    .footer__container {
+      flex-wrap: wrap;
+    }
+  
+    .footer__copy-text {
+      order: 2;
+    }
+  }
+  

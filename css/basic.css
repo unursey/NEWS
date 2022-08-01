@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  background-color: var(--white-color, #FFFFFF);
+  color: var(--darkgrey-color, #212121);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p, figure, fieldset {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.hide {
+  display: none;
+}
+
+svg path {
+  fill:inherit;
+  stroke:inherit;
+  stroke-width:inherit;
+}
+
+@media (max-width: 1220px) {
+  .container {
+    max-width: 910px;
+  }
+}
+
+@media (max-width: 930px) {
+  .container {
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 320px;
+    padding: 0 25px;
+  }
+}
+
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.overlay svg {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+from {
+  transform: rotate(360deg);
+}
+}
