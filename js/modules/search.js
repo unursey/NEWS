@@ -1,4 +1,4 @@
-import { preload } from "./preload.js";
+import { preload, preloadDiv } from "./preload.js";
 import { fetchRequest } from "./fetchRequest.js";
 import { renderGoods } from "./renderGoods.js";
 import { renderWords } from "./renderWords.js";
@@ -74,7 +74,9 @@ export const search = () => {
         "результатов"
       )}`;
       wrapperGoods.append(data[1]);
-      loadImage();
+      
+      preloadDiv();
+      document.addEventListener("DOMContentLoaded", loadImage()); 
     });
   });
 };

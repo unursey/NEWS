@@ -1,4 +1,5 @@
 
+
 export const renderGoods = (err, data, num) => {
   if (err) {
     console.warn(err, data);
@@ -22,8 +23,8 @@ export const renderGoods = (err, data, num) => {
     const card = document.createElement("article");
     card.className = "news__article-card article-card";
     card.innerHTML = `
-    <div class="article-card__img-block">
-        <img src="${item.urlToImage}" class="article-card__img" alt=""/>
+    <div class="article-card__img-block animate">
+      <img src='' data-src="${item.urlToImage}" class="hide article-card__img" alt=""/>
     </div>
     <div class='article-card__block-text'>
       <a href='${item.url}' class="article-card__title">${item.title}</a>
@@ -41,3 +42,26 @@ export const renderGoods = (err, data, num) => {
 
   return template;
 };
+
+
+
+// const loadImg = url => {
+//   preload.show();
+//   new Promise(resolve => {
+//   const img = new Image();
+//   img.className = 'article-card__img';
+//   img.src = url;
+//   img.addEventListener('load', () => {
+//     resolve(img);
+//   });
+// });
+// }
+
+// const showImg = async (url) => Promise.all(
+//    loadImg(url)
+// );
+
+// showImg().then(data => {
+//   preload.remove();
+//   document.querySelector('.article-card__img-block').append(data);
+// })
